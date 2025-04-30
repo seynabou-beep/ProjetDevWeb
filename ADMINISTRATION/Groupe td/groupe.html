@@ -1,0 +1,1908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="groupe.css">
+    <link rel="stylesheet" href="../../menu/index.css">
+    <title>groupe</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="img"><img src="EtudiantIcon.png" alt=""></div>
+        </div>
+    </header>
+    <div class="ensemble">
+        <nav id="navbar">
+            <div id="logo-nav">
+                <div class="logo-container">
+                    <img id="logo_image" src="../../menu/Illustration.png" alt="">
+                </div>
+                <div id="nav-elements">
+                    <a href="../ACCEUIL/acceuil.html">
+                        <div class="element">
+                            <img src="../../menu/Home White.png" alt="">
+                            <span>Acceuil</span>
+                        </div>
+                    </a>
+                    <a href="../Groupe td/groupe.html">
+                        <div class="element active_page">
+                            <img src="../../menu/GroupTD.png" alt="">
+                            <span>Gestion des Groupes</span>
+                        </div>
+                    </a>
+                    <a href="../Notification/tdb.html">
+                        <div class="element">
+                            <img src="../../menu/Notification White.png" alt="">
+                            <span>Notification</span>
+                        </div>
+                    </a>
+                    <a href="../Suivi d'inscription/I_P.html">
+                        <div class="element">
+                            <img src="../../menu/Student Male White.png" alt="">
+                            <span>Suivi Inscription</span>
+                        </div>
+                    </a>
+                    <a href="../Profil/profil.html">
+                        <div class="element">
+                            <img src="../../menu/User.png" alt="">
+                            <span>Profil</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="logout-container">
+                <a href="../../premier/first.html">
+                    <div class="element">
+                        <img src="../../menu/Logout.png" alt="">
+                        <span>Déconnexion</span>
+                    </div>
+                </a> 
+            </div>
+            
+        </nav>
+        <div class="groupe">
+            <div class="selection">
+                <div class="clas">
+                    <select name="classe" id="classe" size="1">
+                        <option value="L1_MASS" class="specialite l1">L1_MASS</option>
+                        <option value="L1_MPI" class="specialite l1">L1_MPI</option>
+                        <option value="L2_MASS" class="specialite l2-mass">L2_MASS</option>
+                        <option value="L2_MPI" class="specialite l2-mpi">L2_MPI</option>
+                        <option value="L3_INFO_SI" class="specialite l3-info-SI">L3_INFO_SI</option>
+                        <option value="L3_INFO_RESEAU" class="specialite l3-info-RESEAU">L3_INFO_RESEAU</option>
+                        <option value="L3_MA" class="specialite l3-ma">L3_MA</option>
+                        <option value="L3_MIAGE" class="specialite l3-miage">L3_MIAGE</option>
+                        <option value="L3_PA" class="specialite l3-pa">L3_PA</option>
+                    </select>
+                </div>
+                <div id="selectsemes">
+                    <div class="mestre" id="L1_MASS">
+                        <select name="l1_mass" class = "sat-classes" id="l1_mass" size="1">
+                            <option value="semestre-1(mass)">Semestre-1</option>
+                            <option value="semestre-2(mass)">Semestre-2</option>
+                        </select>
+                    </div>
+                    <div class="mestre"  id="L1_MPI">
+                        <select name="l1_mpi" class = "sat-classes" id="l1_mpi" size="1">
+                            <option value="semestre-1(mpi)">Semestre-1</option>
+                            <option value="semestre-2(mpi)">Semestre-2</option>
+                        </select>
+                    </div>
+                    <div class="mestre" id="L2_MASS">
+                        <select name="l2-mass" class = "sat-classes" id="l2_mass" size="1">
+                            <option value="semestre-3(mass)">Semestre-3</option>
+                            <option value="semestre-4(mass)">Semestre-4</option>
+                        </select>
+                    </div>
+                    <div class="mestre"  id="L2_MPI">
+                        <select name="l2-mpi" class = "sat-classes" id="l2_mpi" size="1">
+                            <option value="semestre-3(mpi)">Semestre-3</option>
+                            <option value="semestre-4(mpi) ">Semestre-4 </option>
+                        </select>
+                    </div>
+                    <div class="mestre" id="L3_INFO_SI">
+                        <select name="l3-info-SI" class = "sat-classes" id="l3_info_SI" size="1">
+                            <option value="semestre-5(si)">Semestre-5</option>
+                            <option value="semestre-6(si)">Semestre-6</option>
+                        </select>
+                    </div>
+                    <div class="mestre"  id="L3_INFO_RESEAU">
+                        <select name="l3-info-RESEAU" class = "sat-classes" id="l3_info_RESEAU" size="1">
+                            <option value="semestre-5(reseau)">Semestre-5</option>
+                            <option value="semestre-6(reseau)">Semestre-6</option>
+                        </select>
+                    </div>
+                    <div class="mestre" id="L3_MA">
+                        <select name="l3-ma" class = "sat-classes" id="l3_ma" size="1">
+                            <option value="semestre-5(ma)">Semestre-5</option>
+                            <option value="semestre-6(ma)">Semestre-6</option>
+                        </select>
+                    </div>
+                    <div class="mestre" id="L3_PA">
+                        <select name="l3-pa" class = "sat-classes" id="l3_pa" size="1">
+                            <option value="semestre-5(pa)">Semestre-5</option>
+                            <option value="semestre-6(pa)">Semestre-6</option>
+                        </select>
+                    </div>
+                    <div class="mestre" id="L3_MIAGE">
+                        <select name="l3-miage" class = "sat-classes" id="l3_miage" size="1">
+                            <option value="semestre-5(miage)">Semestre-5</option>
+                            <option value="semestre-6(miage)">Semestre-6</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="groupetd" id="semestre-1(mass)">
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Algebre I</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32864</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P32864</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P32864</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">4</td>
+                            <td>P32864</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">5</td>
+                            <td>P32864</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Analyse I</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P3284</td>
+                            <td>MBAYE</td>
+                            <td>Falia</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P32204</td>
+                            <td>MBAYE</td>
+                            <td>Masamba</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P32564</td>
+                            <td>Mar</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">4</td>
+                            <td>P32500</td>
+                            <td>Tall</td>
+                            <td>Alassane</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">10</td>
+                            <td>P32900</td>
+                            <td>Diallo</td>
+                            <td>Seynabou</td> 
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="groupetd" id="semestre-2(mass)">
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Analyse II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32400</td>
+                            <td>Thiam</td>
+                            <td>Aby</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P3286</td>
+                            <td>fall</td>
+                            <td>mohamed</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P3284</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">4</td>
+                            <td>P32800</td>
+                            <td>samb</td>
+                            <td>Khoudia</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">20</td>
+                            <td>P32450</td>
+                            <td> Ndiaye</td>
+                            <td>Fatimatou</td> 
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Algebre II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Algorithme et programmation II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="groupetd" id="semestre-1(mpi)">
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 Optique Géométrique</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32400</td>
+                            <td>Thiam</td>
+                            <td>Aby</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P3286</td>
+                            <td>fall</td>
+                            <td>mohamed</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P3284</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">4</td>
+                            <td>P32800</td>
+                            <td>samb</td>
+                            <td>Khoudia</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">20</td>
+                            <td>P32450</td>
+                            <td> Ndiaye</td>
+                            <td>Fatimatou</td> 
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 Mecanique du Point</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Algorithme et programmation II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="groupetd" id="semestre-2(mpi)">
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 Electricité</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32400</td>
+                            <td>Thiam</td>
+                            <td>Aby</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P3286</td>
+                            <td>fall</td>
+                            <td>mohamed</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P3284</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">4</td>
+                            <td>P32800</td>
+                            <td>samb</td>
+                            <td>Khoudia</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">20</td>
+                            <td>P32450</td>
+                            <td> Ndiaye</td>
+                            <td>Fatimatou</td> 
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Architectecture des Ordinateurs </p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Algorithme et programmation II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="groupetd" id="semestre-3(mpi)">
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Analyse III</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32400</td>
+                            <td>Thiam</td>
+                            <td>Aby</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P3286</td>
+                            <td>fall</td>
+                            <td>mohamed</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P3284</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">4</td>
+                            <td>P32800</td>
+                            <td>samb</td>
+                            <td>Khoudia</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">20</td>
+                            <td>P32450</td>
+                            <td> Ndiaye</td>
+                            <td>Fatimatou</td> 
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Thermodynamique</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Algorithme et programmation III</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="groupetd" id="semestre-4(mpi)">
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Analyse IV</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32400</td>
+                            <td>Thiam</td>
+                            <td>Aby</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P3286</td>
+                            <td>fall</td>
+                            <td>mohamed</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P3284</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">4</td>
+                            <td>P32800</td>
+                            <td>samb</td>
+                            <td>Khoudia</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">20</td>
+                            <td>P32450</td>
+                            <td> Ndiaye</td>
+                            <td>Fatimatou</td> 
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Algebre IV</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 Algorithme Et Programmation IV</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="groupetd" id="semestre-3(mass)">
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .comptabilité Analytique I</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32400</td>
+                            <td>Thiam</td>
+                            <td>Aby</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P3286</td>
+                            <td>fall</td>
+                            <td>mohamed</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P3284</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">4</td>
+                            <td>P32800</td>
+                            <td>samb</td>
+                            <td>Khoudia</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">20</td>
+                            <td>P32450</td>
+                            <td> Ndiaye</td>
+                            <td>Fatimatou</td> 
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1  Macroéconomie II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Algorithme et programmation III</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="groupetd" id="semestre-4(mass)">
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .comptabilité Analytique II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32400</td>
+                            <td>Thiam</td>
+                            <td>Aby</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P3286</td>
+                            <td>fall</td>
+                            <td>mohamed</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P3284</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">4</td>
+                            <td>P32800</td>
+                            <td>samb</td>
+                            <td>Khoudia</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">20</td>
+                            <td>P32450</td>
+                            <td> Ndiaye</td>
+                            <td>Fatimatou</td> 
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1  Macroéconomie III</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Algorithme et programmation III</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="groupetd" id="semestre-6(si)">
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Base de Données</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32400</td>
+                            <td>Thiam</td>
+                            <td>Aby</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P3286</td>
+                            <td>fall</td>
+                            <td>mohamed</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P3284</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">4</td>
+                            <td>P32800</td>
+                            <td>samb</td>
+                            <td>Khoudia</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">20</td>
+                            <td>P32450</td>
+                            <td> Ndiaye</td>
+                            <td>Fatimatou</td> 
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Réseau</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Developpement Mobile II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="groupetd" id="semestre-6(pa)">
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Atomicité</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32400</td>
+                            <td>Thiam</td>
+                            <td>Aby</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P3286</td>
+                            <td>fall</td>
+                            <td>mohamed</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P3284</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">4</td>
+                            <td>P32800</td>
+                            <td>samb</td>
+                            <td>Khoudia</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">20</td>
+                            <td>P32450</td>
+                            <td> Ndiaye</td>
+                            <td>Fatimatou</td> 
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Physique</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Telecom</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="groupetd" id="semestre-5(reseau)">
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Recherche Operationnelle</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32400</td>
+                            <td>Thiam</td>
+                            <td>Aby</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P3286</td>
+                            <td>fall</td>
+                            <td>mohamed</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P3284</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">4</td>
+                            <td>P32800</td>
+                            <td>samb</td>
+                            <td>Khoudia</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">20</td>
+                            <td>P32450</td>
+                            <td> Ndiaye</td>
+                            <td>Fatimatou</td> 
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Cablage</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Systeme d'informations</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="groupetd" id="semestre-5(ma)">
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Analyse II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32400</td>
+                            <td>Thiam</td>
+                            <td>Aby</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P3286</td>
+                            <td>fall</td>
+                            <td>mohamed</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P3284</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">4</td>
+                            <td>P32800</td>
+                            <td>samb</td>
+                            <td>Khoudia</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">20</td>
+                            <td>P32450</td>
+                            <td> Ndiaye</td>
+                            <td>Fatimatou</td> 
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Algebre II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Algorithme et programmation II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="groupetd" id="semestre-5(miage)">
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Analyse II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32400</td>
+                            <td>Thiam</td>
+                            <td>Aby</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P3286</td>
+                            <td>fall</td>
+                            <td>mohamed</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P3284</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">4</td>
+                            <td>P32800</td>
+                            <td>samb</td>
+                            <td>Khoudia</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">20</td>
+                            <td>P32450</td>
+                            <td> Ndiaye</td>
+                            <td>Fatimatou</td> 
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Algebre II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Algorithme et programmation II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="groupetd" id="semestre-5(pa)">
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Analyse II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32400</td>
+                            <td>Thiam</td>
+                            <td>Aby</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P3286</td>
+                            <td>fall</td>
+                            <td>mohamed</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P3284</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">4</td>
+                            <td>P32800</td>
+                            <td>samb</td>
+                            <td>Khoudia</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">20</td>
+                            <td>P32450</td>
+                            <td> Ndiaye</td>
+                            <td>Fatimatou</td> 
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Algebre II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Algorithme et programmation II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="groupetd" id="semestre-5(si)">
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Analyse II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32400</td>
+                            <td>Thiam</td>
+                            <td>Aby</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td>P3286</td>
+                            <td>fall</td>
+                            <td>mohamed</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td>P3284</td>
+                            <td>MBAYE</td>
+                            <td>Aby</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">4</td>
+                            <td>P32800</td>
+                            <td>samb</td>
+                            <td>Khoudia</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td> 
+                        </tr>
+                        <tr>
+                            <td class="num">20</td>
+                            <td>P32450</td>
+                            <td> Ndiaye</td>
+                            <td>Fatimatou</td> 
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Algebre II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <p class="pour">Groupe 1 .Algorithme et programmation II</p>
+                        <tr>
+                            <th class="num">Numero</th>
+                            <th>Code etudiant</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32324</td>
+                            <td>Samb</td>
+                            <td>Kouna</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32256</td>
+                            <td>Thioune</td>
+                            <td>Djibi</td>
+                        </tr>
+                        <tr>
+                            <td class="num">1</td>
+                            <td>P32783</td>
+                            <td>Diouf</td>
+                            <td>Khady</td>
+                        </tr>
+                        <tr>
+                            <td class="num">...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+                    
+                            
+            
+            
+        </div>
+    </div>
+    <script src="groupe.js" > </script>
+</body>
+</html>

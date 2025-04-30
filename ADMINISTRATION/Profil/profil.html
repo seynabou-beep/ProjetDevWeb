@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profil</title>
+    <link rel="stylesheet" href="profil.css">
+    <link rel="stylesheet" href="../../menu/index.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo-nav">
+            <div class="logo-container">
+                <img id="logo_image" src="../../menu/Illustration.png" alt="">
+            </div>
+            <div id="nav-elements">
+                <a href="../ACCEUIL/acceuil.html">
+                    <div class="element">
+                        <img src="../../menu/Home White.png" alt="">
+                        <span>Acceuil</span>
+                    </div>
+                </a>
+                <a href="../Groupe td/groupe.html">
+                    <div class="element">
+                        <img src="../../menu/GroupTD White.png" alt="">
+                        <span>Gestion des Groupes</span>
+                    </div>
+                </a>
+                <a href="../Notification/tdb.html">
+                    <div class="element">
+                        <img src="../../menu/Notification White.png" alt="">
+                        <span>Notifications</span>
+                    </div>
+                </a>
+                <a href="../Suivi d'inscription/I_P.html">
+                    <div class="element ">
+                        <img src="../../menu/Student Male White.png" alt="">
+                        <span>Suivu inscription</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="element active_page">
+                        <img src="../../menu/user blue.png" alt="">
+                        <span>Profil</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="logout-container">
+            <a href="../../premier/first.html">
+                <div class="element">
+                    <img src="../../menu/Logout.png" alt="">
+                    <span>Déconnexion</span>
+                </div>
+            </a> 
+        </div>
+        
+    </nav>
+    <main id="main">
+        <div id="menu-button">
+            <img id = "menu-img"src="default_pp.png" alt="">
+        </div>
+        <h1>Profil</h1>
+
+        <div class="profile-pic-container">
+            <div class="pic-div">
+                <img src="default_pp.png" id="profile-pic" alt="">
+                <input type="file" name="input-photo" id="input-photo">
+                <label for="input-photo" id="edit-label">
+                    <img src="../Icons/image_input.png" alt="">
+                </label>
+            </div>
+        </div>
+        <form action="#" method="post">
+            <div class="container">
+                <label for="nom">Nom complet</label> <br>
+                <input type="text" id="nom" value="Djiby Thioune">
+            </div>
+            <div class="container">
+                <label for="email">Adresse email</label> <br>
+                <input type="email" id="email" value="diibythioune@gmail.com" readonly>
+            </div>
+            <div class="container">
+                <label for="genre">Genre</label> <br>
+                <input type="text" id="genre" value="Masculin" readonly>
+            </div>
+            <div class="container">
+                <label for="date-naissance">Date de naissance</label> <br>
+                <input type="date" id="date-naissance" value="2001-02-14">
+            </div>
+            <!-- <div class="container">
+                <label for="poids">Poids</label> <br>
+                <input type="text" id="poids" value="78 Kg">
+            </div>
+            <div class="container">
+                <label for="taille">Taille</label> <br>
+                <input type="text" id="poids" value="178 cm">
+            </div>
+            <div class="container">
+                <input type="submit" id="submit1" value="Enregistrer">
+            </div> -->
+        </form>
+        <div class="container" id="change-pwd">
+            <span>Changer mot de passe</span>
+            <img id="chev-img" src="../Icons/chevron-down.png" alt="">
+        </div>
+        <form action="#" id="hide-form" class="show">
+            <div class="container">
+                <img src="../Icons/lock.png" id="lock1" alt="">
+                <img src="../Icons/hide.png" id="status1" alt="">
+                <input type="password" id="pwd1" placeholder="Nouveau mot de passe">
+            </div>
+            <div class="container">
+                <img src="../Icons/lock.png" id="lock2" alt="">
+                <img src="../Icons/hide.png" id="status2" alt="">
+                <input type="password" id="pwd2" placeholder="Confirmer le mot de passe">
+            </div>
+            <div class="container">
+                <input type="submit" id="submit2" value="Modifier">
+            </div>
+        </form>
+        <br>
+        <br>
+        <br>
+    </main>
+    <script src="profil.js"></script>
+</body>
+</html>

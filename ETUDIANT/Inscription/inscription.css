@@ -1,0 +1,63 @@
+body
+{
+    padding: 0%;
+    margin: 0%;
+}
+select
+{
+    width: 160px;
+    height: 30px;
+    font-size: 18px;
+    border: 2px solid blue;
+}
+.contenant1
+{
+    display: flex;
+}
+.div1,.div3,p
+{
+    margin: 5px;
+}
+#sel,p,#sel1
+{
+    border-color: blue;
+    color: blue;
+    border-radius: 5px;
+}
+.val
+{
+    width: 90%;
+    padding-left: 70%;
+    margin: 15px;
+    /* margin-top: 5%; */
+}
+.icon
+{
+    padding-left: 85%;
+}
+button
+{
+    background-color: blue;
+    border-radius: 5px;
+    width: 80%;
+    border: none;
+    height: 30px;
+}
+.connex{
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+}
+.contenant
+{
+    padding-top: 2%;
+    padding-left: 30%;
+}
+label,p
+{
+    font-size: 20px;
+}
+input
+{
+    width: 18px;
+}

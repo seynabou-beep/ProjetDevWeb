@@ -1,0 +1,46 @@
+body
+{
+    background-color: rgb(232, 239, 241);
+    padding: 0;
+    margin: 0;
+}
+.icon
+{
+    padding-left: 94%;
+}
+.contenant
+{
+    padding-top: 2%;
+    padding-left: 20%;
+}
+.cont 
+{
+    display: flex;
+}
+.icon2
+{
+    padding-left: 470px; 
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+.loser
+{
+    width: 35%;
+    padding-top: 70px;
+    padding-left: 30px;
+    position: absolute;
+    font-style: italic;
+    font-weight: bold;
+}
+p
+{
+    /* margin: 20px; */
+    font-size: 40px;
+    color: black;
+    padding: 10px;
+}
+.cv
+{
+    color: blue;
+}

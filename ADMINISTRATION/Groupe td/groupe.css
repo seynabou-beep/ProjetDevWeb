@@ -1,0 +1,122 @@
+body,header{
+    padding: 0;
+    margin: 0;
+    background-color: #f7f7fd;
+}
+
+
+.img{
+    padding-left: 1020px;
+    padding-top: 15px;
+    width: 30px;
+}
+
+/* .accueil img{
+    width: 25px;
+} */
+
+/* a{
+    text-decoration: none;
+}
+.td a{
+    color: white;
+}
+.td a:hover{
+    color: white;
+}
+.inscription a:hover{
+    color :blue;
+}
+.notif a:hover{
+    color :blue;
+}
+.p{
+    text-align: center;
+} */
+.td div{
+    padding: 5px;
+}
+
+
+.ensemble{
+    display: flex;
+    /* margin: 20px; */
+    /* padding-left: 50px; */
+
+}
+/* .accueil{
+    width: 30%;
+    padding-top: 50px;
+} */
+
+.groupe{
+    width: 70%;
+    padding-left: 350px;
+}
+
+/* .inscription{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 165px;
+    height: 45px;
+    display: flex;
+    font-size: 18px;
+    border-radius:  8px; 
+    color: blue;
+    text-align: center;
+}
+
+.notif{
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 165px;
+    height: 45px;
+    display: flex;
+    font-size: 18px;
+    border-radius:  8px; 
+    color: blue;
+    text-align: center;
+} */
+select{
+    border: 2px solid blue;
+    border-radius: 20px;
+    color: blue;
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    background-color: #f5f5fa;
+}
+
+#selectsemes{
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.selection {
+    display: flex;
+}
+.mestre{
+    padding-left: 150px;
+}
+.groupe{
+    padding-top: 85px;
+}
+table{
+    border-collapse: collapse;
+    width: 600px;
+}
+td,tr,th{
+    border: 1px solid black;
+}
+.pour{
+    font-weight: bold;
+    text-align: left;
+    color:blue ;
+    margin: 10px;
+}
+.num{
+    width: 10px;
+}
+.groupetd div{
+    padding-top: 10px;
+}
